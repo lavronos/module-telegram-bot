@@ -1,0 +1,41 @@
+{
+  "id": "telegram-bot",
+  "name": "Telegram Bot",
+  "label": "Telegram Bot",
+  "version": "0.1.1",
+  "latestVersion": "0.1.1",
+  "description": "Adds Telegram Bot API configuration, users, roles, permissions, notifications and module actions.",
+  "summary": "Controls LavronOS through Telegram with users, permissions, notifications and module actions.",
+  "author": "LavronOS",
+  "authorUrl": "https://lavronos.com",
+  "min_lavronos_version": "0.11.0",
+  "max_lavronos_version": null,
+  "category": "automation",
+  "categoryLabel": "Automation",
+  "license": "MIT",
+  "icon": "bot",
+  "href": "/telegram",
+  "capabilities": ["Telegram Bot API", "Users and roles", "Module permissions", "Notifications", "Inline menu editor", "Module actions"],
+  "systemDependencies": [],
+  "runtime": {
+    "page": {"type": "iframe", "path": "page.html", "minHeight": 760},
+    "dashboardWidgets": {
+      "status": {"type": "iframe", "path": "dashboard.html", "minHeight": 340}
+    }
+  },
+  "runtimeData": {
+    "endpoints": [
+      {"label": "Telegram configuration", "url": "/api/telegram/config"}
+    ]
+  },
+  "dashboardWidgets": [
+    {
+      "id": "status",
+      "title": "Telegram Bot",
+      "description": "Telegram Bot connection and configuration state.",
+      "icon": "bot",
+      "runtime": {"type": "iframe", "path": "dashboard.html", "minHeight": 340}
+    }
+  ],
+  "changelog": ["0.1.1 - Moved the module into an independent repository with versioned Marketplace releases.", "0.1.0 - Initial Telegram Bot module."]
+}
