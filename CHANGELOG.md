@@ -4,6 +4,12 @@ All notable changes to the LavronOS Telegram Bot module are documented here.
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-06-14
+
+### Changed
+- Replaced raw configuration JSON with a Telegram Bot dashboard for connection, users, menu buttons and module actions.
+- Added a clear first-run connection screen linked to the module settings.
+
 ## [0.1.2] - 2026-06-13
 
 ### Added

@@ -4,6 +4,9 @@ Independent LavronOS module package for Telegram users, permissions,
 notifications and module actions.
 
 The module owns its page, dashboard widget, settings UI and server runtime.
+Its runtime page shows the connected bot, active and pending users, main menu
+buttons and available module actions. Before a BotFather token is saved, it
+shows one setup screen linked directly to the module settings.
 LavronOS stores user-entered settings in its encrypted SQLite settings table
 so module updates do not overwrite them.
 
@@ -15,9 +18,9 @@ repository.
 Release history is maintained in [CHANGELOG.md](CHANGELOG.md).
 
 ```bash
-git tag -a v0.1.2 -m "Release Telegram Bot module 0.1.2"
+git tag -a v0.1.3 -m "Release Telegram Bot module 0.1.3"
 git push origin main
-git push origin v0.1.2
+git push origin v0.1.3
 ```
 
 No WordPress credentials are required in this repository.
