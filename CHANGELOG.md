@@ -4,6 +4,23 @@ All notable changes to the LavronOS Telegram Bot module are documented here.
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-06-15
+
+### Fixed
+- Restored the complete v0.11 Telegram Bot workspace inside the module package,
+  including tabs, user access details, menu navigation and phone preview.
+- Restored working menu editing, submenu previews and user approval or blocking actions.
+- Restored the Telegram bot avatar, interactive phone buttons and masked saved token.
+- Fixed module-owned settings links being blocked by iframe navigation sandboxing.
+- Centered Telegram metric, connection and action icons on both axes.
+- Added real Telegram user profile photos with a safe initials fallback.
+- Changed phone-preview buttons to show current module data instead of placeholder descriptions.
+- Restored menu editing as a focused modal instead of an inline browser select.
+
+### Removed
+- Removed the Telegram dashboard widget because the module has no useful
+  home-screen data to display.
+
 ## [0.1.3] - 2026-06-14
 
 ### Changed

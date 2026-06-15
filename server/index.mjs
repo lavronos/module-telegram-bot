@@ -1,5 +1,5 @@
 export async function handleRequest(request, context) {
-  if (!/^(?:avatar|config|menu|users\/[^/]+)$/.test(context.path)) {
+  if (!/^(?:avatar|config|menu|users\/[^/]+(?:\/avatar)?)$/.test(context.path)) {
     return Response.json({ ok: false, error: { message: "Telegram Bot module route not found." } }, { status: 404 });
   }
 

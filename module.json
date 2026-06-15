@@ -2,8 +2,8 @@
   "id": "telegram-bot",
   "name": "Telegram Bot",
   "label": "Telegram Bot",
-  "version": "0.1.3",
-  "latestVersion": "0.1.3",
+  "version": "0.1.4",
+  "latestVersion": "0.1.4",
   "description": "Adds Telegram Bot API configuration, users, roles, permissions, notifications and module actions.",
   "summary": "Controls LavronOS through Telegram with users, permissions, notifications and module actions.",
   "author": "LavronOS",
@@ -17,26 +17,14 @@
   "capabilities": ["Telegram Bot API", "Users and roles", "Module permissions", "Notifications", "Inline menu editor", "Module actions"],
   "systemDependencies": [],
   "runtime": {
-    "page": {"type": "iframe", "path": "page.html", "minHeight": 760},
+    "page": {"type": "iframe", "path": "page.html", "minHeight": 1260},
     "settings": {"type": "iframe", "path": "settings.html", "minHeight": 430},
-    "server": {"entry": "server/index.mjs"},
-    "dashboardWidgets": {
-      "status": {"type": "iframe", "path": "dashboard.html", "minHeight": 340}
-    }
+    "server": {"entry": "server/index.mjs"}
   },
   "runtimeData": {
     "endpoints": [
       {"label": "Telegram configuration", "url": "/api/modules/runtime/telegram-bot/api/config"}
     ]
   },
-  "dashboardWidgets": [
-    {
-      "id": "status",
-      "title": "Telegram Bot",
-      "description": "Telegram Bot connection and configuration state.",
-      "icon": "bot",
-      "runtime": {"type": "iframe", "path": "dashboard.html", "minHeight": 340}
-    }
-  ],
-  "changelog": ["0.1.3 - Added a product runtime dashboard and first-run connection guidance.", "0.1.2 - Added module-owned settings and server runtime hooks.", "0.1.1 - Moved the module into an independent repository with versioned Marketplace releases.", "0.1.0 - Initial Telegram Bot module."]
+  "changelog": ["0.1.4 - Restored the complete v0.11 Telegram Bot workspace, real user avatars, live action previews, modal menu editing and masked token settings; removed the unnecessary dashboard widget.", "0.1.3 - Added a product runtime dashboard and first-run connection guidance.", "0.1.2 - Added module-owned settings and server runtime hooks.", "0.1.1 - Moved the module into an independent repository with versioned Marketplace releases.", "0.1.0 - Initial Telegram Bot module."]
 }
